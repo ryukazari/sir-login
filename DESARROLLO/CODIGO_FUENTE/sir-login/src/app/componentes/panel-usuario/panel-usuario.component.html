@@ -1,0 +1,52 @@
+<div class="panel-login-usuario">
+        <div class="flecha">
+          <a href="" (click)="backClicked()">
+            <mat-icon style="color: #800000; " aria-hidden="false" aria-label="Example home icon">arrow_back</mat-icon>
+          </a>
+        </div>
+        <h1>U.N.M.S.M</h1>
+        <h2>Iniciar Sesión</h2>
+        <h3>ir a Pagos UNMSM</h3>
+        <div class="alternate-theme" style="padding-top: 15px;">
+          <form [formGroup]="loginForm" (ngSubmit)="ClickSiguiente()"  class="example-form">
+            <mat-form-field class="formulario-width" appearance="outline">
+              <mat-label>Correo institucional u otro</mat-label>
+              <input formControlName="username" matInput placeholder="Correo institucional u otro"
+                [errorStateMatcher]="matcher">
+              <mat-error *ngIf="!emailFormControl.hasError('required')">
+                Por favor digite su email valido
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                Email es <strong>requerido</strong>
+              </mat-error>
+              <mat-error *ngIf="submitted && errorCredenciales">
+                Email o código <strong>no existe</strong>
+              </mat-error>
+            </mat-form-field>
+            <div style="text-align: left;">
+              <mat-hint>
+                <a href="" style="color: #800000; ">
+                  ¿Has olvidado tu correo institucional?
+                </a>
+              </mat-hint>
+              <p style="padding-top: 25px;">
+                ¿No tienes correo institucional? Puedes acceder con otro
+                correo electrónico, solo necesitas crearte una cuenta.
+              </p>
+
+            </div>
+            <div class="row" style="padding-top: 30px;">
+              <div class="col-6">
+                <a href="" style="color: #800000; ">
+                  Crear cuenta
+                </a>
+              </div>
+              <div class="col-6">
+                <div class="alternate-theme">
+                  <button mat-raised-button color="primary" type="submit">Siguiente</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>

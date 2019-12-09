@@ -1,0 +1,61 @@
+<div class="container " style=" height: 100%;">
+  <div class="row   justify-content-center" style=" height: 100%;">
+    <div class="col col-sm col-md-5 col-lg-5 col-xl-5 align-self-center ">
+      <!--             <mat-card class="example-card  " >
+                <mat-card-header>
+                <mat-card-title style="color: #800000;">U.N.M.S.M</mat-card-title>
+                <mat-card-title>Iniciar Sesión</mat-card-title>
+                
+                </mat-card-header>
+               
+                <mat-card-content>
+                  <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button>SHARE</button>
+                </mat-card-actions>
+              </mat-card> -->
+
+
+              <div class="alternate-theme" [hidden]="!loading">
+              <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+              </div>
+
+
+<!--                <app-panel-usuario [hidden]="!mostrar"  (messageEventUsuario)="receiveMessageUsuario($event)" ></app-panel-usuario>
+               
+              
+              <app-panel-contrasena [hidden]="mostrar" (messageEventContrasena)="receiveMessageContrasena($event)" ></app-panel-contrasena> 
+ -->
+              <div   class="row">
+                  <div class="col">
+                  <!-- Swiper -->
+                  <swiper [config]="config"  #usefulSwiper>
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="contenido">
+                                  <app-panel-usuario   (messageEventUsuario)="receiveMessageUsuario($event)" ></app-panel-usuario>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="contenido" >
+                                  <app-panel-contrasena  (messageEventContrasena)="receiveMessageContrasena($event)" ></app-panel-contrasena> 
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Add Arrows -->
+<!--                       <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div> -->
+                  </swiper>
+                  </div> <!-- fin col -->
+                  </div> <!-- fin row --> 
+
+    </div>
+
+  </div>
+</div>

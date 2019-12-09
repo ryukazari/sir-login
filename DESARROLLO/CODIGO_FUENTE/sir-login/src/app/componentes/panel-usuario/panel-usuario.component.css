@@ -1,0 +1,56 @@
+
+.panel-login-usuario {
+background-color: white ;
+
+height: 560px;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+
+}
+.flecha{
+ text-align: left;
+}
+
+.panel-login-usuario > h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #800000;
+    
+}
+
+.panel-login-usuario > h2{
+    font-size: 2rem;
+    text-align: center;
+   }
+.panel-login-usuario > h3{
+    font-size: 1.1rem;
+    color: #3A3042;
+    text-align: center;
+
+   }
+
+   .example-form {
+    
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 769px) {/* desde tableas a pc*/
+  .formulario-width {
+    width: 80%;
+  }
+  }
+
+  @media only screen and (max-width: 768px) {/* para celu*/
+    .formulario-width {
+        width: 100%;
+      }
+  } 
+
+  .mat-form-field-wrapper{
+
+    padding-bottom: 10px!important;
+  }

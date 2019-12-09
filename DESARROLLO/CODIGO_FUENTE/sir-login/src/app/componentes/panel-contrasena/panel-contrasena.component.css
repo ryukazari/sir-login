@@ -1,0 +1,89 @@
+
+.puntero{
+  cursor:pointer; 
+  cursor: hand
+}
+
+.panel-login-contrasena {
+    background-color: white ;
+    
+    height: 560px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    }
+    .flecha{
+     text-align: left;
+    }
+    
+    .panel-login-contrasena > h1{
+        text-align: center;
+        font-size: 1.8rem;
+        color: #800000;
+        
+    }
+    
+    .panel-login-contrasena > h2{
+        font-size: 1.3rem;
+        text-align: center;
+       }
+    .panel-login-contrasena > h3{
+        font-size: 1.1rem;
+        color: #3A3042;
+        text-align: center;
+    
+       }
+ 
+      .usuario > h3 {
+        font-size: 1.2rem;
+        text-align: center;
+      } 
+      .email-validate  {
+        margin-bottom: 0rem;
+        text-align: center;
+        border-radius: 16px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #CFDBD5;
+        padding: 5px 7px 5px 5px;
+      }
+      .email-usuario{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+
+      @media only screen and (min-width: 769px) {/* desde tableas a pc*/
+      .email-validate  {
+      margin-left: 30px;
+      margin-right: 30px;
+      }
+    }
+
+    
+       .example-form {
+        
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      @media only screen and (min-width: 769px) {/* desde tableas a pc*/
+      .formulario-width {
+        width: 80%;
+      }
+      }
+    
+      @media only screen and (max-width: 768px) {/* para celu*/
+        .formulario-width {
+            width: 100%;
+          }
+      } 
+    
+      .mat-form-field-wrapper{
+    
+        padding-bottom: 10px!important;
+      }

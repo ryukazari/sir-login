@@ -1,0 +1,78 @@
+<div class="panel-login-contrasena">
+        <div class="flecha">
+          <a class="puntero" (click) = "ClickAtrasEmail()">
+            <mat-icon style="color: #800000; " aria-hidden="false" aria-label="Example home icon">arrow_back</mat-icon>
+          </a>
+        </div>
+        <h1>U.N.M.S.M</h1>
+        <h2>Te damos la bienvenida</h2>
+<!--         <div class="usuario" >
+            <h3 >
+              {{usuario}}
+            </h3>
+            
+        </div> -->
+        <div class="row email-validate d-flex align-items-center">
+            <div class="col-1">
+           
+                    <mat-icon style="color: #800000;  padding-top: 4px;" aria-hidden="false" aria-label="Example home icon">person</mat-icon>            
+            </div>
+            <div class="col-9" style="text-align: center;">      
+                <div class="email-usuario">
+                        15263@gmail.com
+                </div>
+            </div>
+
+            <div class="col-1" style="color: #800000;  padding-top: 10px; text-align: left;">      
+              <a class="puntero" (click) = "ClickAtrasEmail()">
+              <i class="material-icons">
+                keyboard_arrow_down
+                </i>
+              </a> 
+            </div>
+        </div>
+       
+        <div class="alternate-theme" style="padding-top: 15px;">
+          <form class="example-form">
+            <mat-form-field class="formulario-width" appearance="outline">
+              <mat-label>Introduce la contraseña</mat-label>
+              <input matInput type="password" placeholder="Contraseña" [formControl]="passwordFormControl"
+                [errorStateMatcher]="matcher">
+              <mat-error *ngIf=" !passwordFormControl.hasError('required')">
+                Por favor digite su contraseña
+              </mat-error>
+              <mat-error *ngIf="passwordFormControl.hasError('required')">
+                Contraseña es <strong>requerido</strong>
+              </mat-error>
+            </mat-form-field>
+            <div style="text-align: left;">
+        
+        
+
+            </div>
+            <div class="row" style="padding-top: 30px;">
+              <div class="col-6">
+                <a href="" style="color: #800000; ">
+                    ¿Has olvidado tu contraseña?
+                </a>
+              </div>
+              <div class="col-6">
+                <div class="alternate-theme">
+                  <button mat-raised-button color="primary">Siguiente</button>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </form>
+
+
+
+
+        </div>
+
+
+      </div>
+
